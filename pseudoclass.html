@@ -1,23 +1,43 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Pseudo</title>
-        <link rel="stylesheet" href="pseudo.css">
-    </head>
-    <body>
-        <section> 
-        <div class="firstelement">
-            <p>Hover me to change my color</p>
-        </div>
-        <div class="firstelement">
-            <p>Hover me to change my color</p>
-        </div>
-        <div class="firstelement">
-            <p>Hover me to change my color</p>
-        </div>
-        <div class="firstelement">
-            <p>Hover me to change my color</p>
-        </div>
-    </section>
-    </body>
-</html>
+
+p{
+    text-align: center;
+    transition: all 0.5s linear;
+}
+p:hover{
+    scale: 1.2;
+}
+.firstelement{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+.firstelement:hover{
+    background-color: red;
+    scale: 1.2;
+}
+.firstelement:hover{
+    scale: 1.2;
+}
+section{
+    display: flex;
+    margin: 10px;
+}
+.firstelement:first-child{
+    background-color: red;
+}
+.firstelement:last-child{
+    background-color: aqua;
+}
+.firstelement:nth-child{
+    background-color: cadetblue;
+}
+
